@@ -1,4 +1,5 @@
 from django.db import models
+import datetime
 
 # Create your models here.
 
@@ -18,6 +19,7 @@ class Car(models.Model):
     millage = models.IntegerField()
     description = models.TextField()
     condition = models.CharField(max_length=10)
+    manufacture  = models.DateField(default=datetime.datetime.today)
     banner_image2 = models.ImageField(upload_to='images/',default='default.png')
     banner_image3 = models.ImageField(upload_to='images/',default='default.png')
     banner_image4 = models.ImageField(upload_to='images/',default='default.png')
