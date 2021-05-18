@@ -1,0 +1,24 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg-image {
+  background-image: url("../images/banner.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* displays an overlay color above the image */
+.bg-image::before{
+    background-color: #2F01475E;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
