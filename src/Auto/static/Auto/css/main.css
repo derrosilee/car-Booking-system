@@ -1,24 +1,46 @@
 body,
 html {
-  height: 100%;
   margin: 0;
+  padding: 0;
 }
 
-.bg-image {
-  background-image: url("../images/banner.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-
-/* displays an overlay color above the image */
-.bg-image::before{
-    background-color: #2F01475E;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
+.container {
+    position: relative;
     width: 100%;
-  }
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    scroll-snap-align: start;
+}
+
+.section:nth-child(1) {
+	background-image: linear-gradient(rgba(96, 88, 151, 0), rgba(104, 23, 197, 0.33)), url("../images/banner.jpg");
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.navigation {
+    padding: 20px;
+}
+
+.navigation > a {
+    text-decoration: none;
+    color: white;
+}
+
+.Logo {
+   float: left;
+   color: white;
+   margin-left: 3em;
+}
