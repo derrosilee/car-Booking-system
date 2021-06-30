@@ -112,3 +112,6 @@ html {
     text-decoration: none;
 }
 
+.menu {
+    display: none;
+}
