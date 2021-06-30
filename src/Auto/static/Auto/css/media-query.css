@@ -4,17 +4,38 @@
         display: none;
     }
 
-    .action-buttons {
-        position: fixed;
+    .Logo {
+        margin-left: 7em;
+        display: none;
     }
+
+    
+
+    .action-buttons {
+         /* display: grid; */
+        /* position: fixed; */
+        padding-top: 10em;
+        margin: auto;
+    }
+
+    .rent {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .contact-us {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
 
     .menu{
         display: block;
         position: fixed;
-        width: 3rem;
+        width: 2rem;
         height: 3rem;
         top: 3rem;
-        right: 3rem;
+        right: 1.5rem;
         z-index: 999;
         cursor: pointer;
     }
@@ -74,7 +95,8 @@
     nav{
         width: 14rem;
         height:100%;
-        background-color:#fff;
+        background-color:white;e;
+        opacity: .4;
         position: fixed;
         transform: translateX(-50rem);
         z-index: 998;
@@ -103,5 +125,5 @@
         display: block;
     }
 
-
 }
+
