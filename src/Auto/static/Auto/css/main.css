@@ -30,7 +30,9 @@ html {
 
 .navbar {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    position: fixed;
+    right: 15em;
     list-style-type: none;
     font-size: 14px;
     font-family: "Gotham SSm", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -52,9 +54,10 @@ html {
 }
 
 .Logo {
-   float: left;
-   color: white;
-   margin-left: 3em;
+    float: left;
+    color: #ffffff;
+    margin-left: 3em;
+    position: fixed;
 }
 
 .wrapper-intro {

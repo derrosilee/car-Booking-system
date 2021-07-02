@@ -111,6 +111,7 @@
 
     .navbar {
         display: block;
+        position: static;
     }
 
     .action-buttons{
