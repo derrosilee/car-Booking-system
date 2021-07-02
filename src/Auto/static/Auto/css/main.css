@@ -5,133 +5,162 @@ html {
 }
 
 .container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    scroll-behavior: smooth;
-    overflow: auto;
-    scroll-snap-type: y mandatory;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
 }
 
 .section {
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    scroll-snap-align: start;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  scroll-snap-align: start;
 }
 
+/* Background image and gradient for the first snap */
 .section:nth-child(1) {
-	background-image: linear-gradient(rgba(96, 88, 151, 0), rgba(104, 23, 197, 0.33)), url("../images/banner.jpg");
+  background-image: linear-gradient(
+      rgba(96, 88, 151, 0),
+      rgba(104, 23, 197, 0.33)
+    ),
+    url("../images/banner.jpg");
 }
+/* end of first image bg snap */
 
-.phone-logo{
-    display: none;
+/* Background image and gradient for the second snap */
+.section:nth-child(2) {
+  background-image: linear-gradient(
+      rgba(96, 88, 151, 0),
+      rgba(104, 23, 197, 0.33)
+    ),
+    url("../images/banner.jpg");
+}
+/* end of second image bg snap */
+
+/* Background image and gradient for the third snap */
+.section:nth-child(3) {
+  background-image: linear-gradient(
+      rgba(96, 88, 151, 0),
+      rgba(104, 23, 197, 0.33)
+    ),
+    url("../images/banner.jpg");
+}
+/* end of third image bg snap */
+
+.phone-logo {
+  display: none;
 }
 
 .navbar {
-    display: flex;
-    /* justify-content: center; */
-    position: fixed;
-    right: 31em;
-    list-style-type: none;
-    font-size: 14px;
-    font-family: "Gotham SSm", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 500;
-    line-height: 21px;
+  display: flex;
+  /* justify-content: center; */
+  position: fixed;
+  right: 31em;
+  list-style-type: none;
+  font-size: 14px;
+  font-family: "Gotham SSm", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  line-height: 21px;
 }
 
 .navigation {
-    padding: 20px;
-    font-size: 1.3em;
+  padding: 20px;
+  font-size: 1.3em;
 }
 .navigation:hover {
-    border-bottom: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 .navigation > a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .Logo {
-    float: left;
-    color: #ffffff;
-    margin-left: 3em;
-    position: fixed;
+  float: left;
+  color: #ffffff;
+  margin-left: 3em;
+  position: fixed;
 }
 
 .wrapper-intro {
-    position: absolute;
-    right: 38%;
-    top: 5em;
+  position: absolute;
+  right: 38%;
+  top: 5em;
 }
 
 .wrapper-intro > .intro {
-    color: #9C528B;
-    font-family: "Gotham Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 48px;
-    position: absolute;
-    left: -4em;
-    top: 1.3em;
+  color: #9c528b;
+  font-family: "Gotham Medium", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  position: absolute;
+  left: -4em;
+  top: 1.3em;
 }
 
 .intro-name {
-    position: absolute;
-    top: 9em;
-    width: 16em;
-    left: -16em;
-    color: #DFD2D2;
-    font-family: "Gotham Book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 400;
-    line-height: 20px;
-    font-size: 14px;
+  position: absolute;
+  top: 9em;
+  width: 16em;
+  left: -16em;
+  color: #dfd2d2;
+  font-family: "Gotham Book", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 14px;
 }
 
 .action-buttons {
-    color: white;
-    position: absolute;
-    top: 90%;
-    right: 17.5%;
+  color: white;
+  position: absolute;
+  top: 90%;
+  right: 17.5%;
 }
 
 .rent {
-    border: 0px solid #707070;
-    padding-left: 90px;
-    padding-right: 90px;
-    padding-bottom: 10px;
-    padding-top: 6px;
-    border-radius: 1.7em;
-    position: absolute;
-    left: -50em;
-    /* margin-left: 30%; */
-    background-color: #B9929F;
-    opacity: 0.8;
-    font-family: "Gotham Book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  border: 0px solid #707070;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 10px;
+  padding-top: 6px;
+  border-radius: 1.7em;
+  position: absolute;
+  left: -50em;
+  /* margin-left: 30%; */
+  background-color: #b9929f;
+  opacity: 0.8;
+  font-family: "Gotham Book", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.contact-us{
-    border: 0px solid #707070;
-    padding-left: 90px;
-    padding-right: 90px;
-    padding-bottom: 10px;
-    padding-top: 6px;
-    border-radius: 1.7em;
-    position: absolute;
-    left: -22em;
-    /* margin-left: 5%; */
-    background-color: #ffffff;
-    opacity: .8;
-    font-family: "Gotham Book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+.contact-us {
+  border: 0px solid #707070;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 10px;
+  padding-top: 6px;
+  border-radius: 1.7em;
+  position: absolute;
+  left: -22em;
+  /* margin-left: 5%; */
+  background-color: #ffffff;
+  opacity: 0.8;
+  font-family: "Gotham Book", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .action-buttons > a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .menu {
-    display: none;
+  display: none;
 }
-
-

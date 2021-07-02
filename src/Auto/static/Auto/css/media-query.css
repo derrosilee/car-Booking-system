@@ -1,299 +1,281 @@
-@media screen and (max-width:1430px) {
+@media screen and (max-width: 1430px) {
+  .wrapper-intro {
+    display: none;
+  }
 
-    .wrapper-intro {
-        display: none;
-    }
+  .Logo {
+    margin-left: 7em;
+    display: none;
+  }
 
-    .Logo {
-        margin-left: 7em;
-        display: none;
-    } 
+  .action-buttons {
+    padding-top: 10em;
+    margin: auto;
+  }
 
-    
+  .menu {
+    display: block;
+    position: fixed;
+    width: 2rem;
+    height: 3rem;
+    top: 3rem;
+    right: 1.5rem;
+    z-index: 999;
+    cursor: pointer;
+  }
 
-    .action-buttons {
-        padding-top: 10em;
-        margin: auto;
-    }
+  .bar,
+  .bar::before,
+  .bar::after {
+    position: absolute;
+    background-color: #ffff;
+    margin: auto;
+    width: 100%;
+    height: 3px;
+    content: "";
+    top: 50%;
+    left: 0;
+  }
 
+  .bar {
+    margin-top: -3em;
+  }
 
+  .bar::before {
+    top: -1.2rem;
+  }
 
-    .menu{
-        display: block;
-        position: fixed;
-        width: 2rem;
-        height: 3rem;
-        top: 3rem;
-        right: 1.5rem;
-        z-index: 999;
-        cursor: pointer;
-    }
+  .bar::after {
+    top: 1.2rem;
+  }
 
-    .bar,
-    .bar::before,
-    .bar::after{
-        position: absolute;
-        background-color: #ffff;
-        margin:auto;
-        width: 100%;
-        height: 3px;
-        content: "";
-        top: 50%;
-        left: 0;
-    }
+  .bar::before,
+  .bar::after {
+    transform: rotate(0deg);
+  }
 
-    .bar {
-        margin-top: -3em;
-    }
+  .active .bar {
+    background-color: transparent;
+  }
 
-    .bar::before{
-        top: -1.2rem;
-    }
+  .active .bar::before {
+    transform: rotate(45deg);
+  }
 
-    .bar::after{
-        top: 1.2rem;
-    }
+  .active .bar::after {
+    transform: rotate(-45deg);
+  }
 
-    .bar::before,
-    .bar::after{
-        transform: rotate(0deg);
-    }
+  .active .bar::before,
+  .active .bar::after {
+    top: 0;
+  }
 
-    .active .bar{
-        background-color: transparent;
-    }
+  .navigation > a {
+    text-decoration: none;
+    color: black;
+  }
 
-    .active .bar::before{
-        transform: rotate(45deg);
-    }
+  nav {
+    width: 15rem;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    transform: translateX(-50rem);
+    z-index: 998;
+    line-height: 1;
+    font-size: 2.5rem;
+    transition: transform 0.8s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+  }
 
-    .active .bar::after{
-        transform: rotate(-45deg);
-    }
+  .menu-open nav {
+    transform: translateX(0);
+  }
 
-    .active .bar::before,
-    .active .bar::after{
-        top: 0;
-    }
+  .navbar ul {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 10rem;
+  }
 
-    .navigation > a {
-        text-decoration: none;
-        color: black;
-    }
+  .nav ul li {
+    display: block;
+    padding: 4rem 1rem;
+  }
 
-    nav{
-        width: 15rem;
-        height:100%;
-        background-color:white;
-        position: fixed;
-        transform: translateX(-50rem);
-        z-index: 998;
-        line-height: 1;
-        font-size: 2.5rem;
-        transition: transform .8s cubic-bezier(0.56, 0.1, 0.34, 0.91);
-    }
+  .navbar {
+    display: block;
+    position: static;
+  }
 
-    .menu-open nav{
-        transform: translateX(0);
-    }
+  .action-buttons {
+    position: absolute;
+    top: 2em;
+    /* right: -8em; */
+  }
 
-    .navbar ul{
-        display: block;
-        width: 100%;
-        text-align: center;
-        padding-top: 10rem;
-    }
+  .rent {
+    position: absolute;
+    left: -27em;
+    top: 23em;
+    text-align: center;
+    width: 10em;
+  }
 
-    .nav ul li{
-        display: block;
-        padding: 4rem 1rem;
-    }
+  .contact-us {
+    top: 27em;
+    left: -27em;
+    text-align: center;
+    width: 10em;
+  }
 
-    .navbar {
-        display: block;
-        position: static;
-    }
+  .phone-logo {
+    display: inline;
+    position: absolute;
+    right: -16.3em;
+    top: -4px;
+  }
 
-    .action-buttons{
-        position: absolute;
-        top: 2em;
-        /* right: -8em; */
-    }
- 
-    .rent {
-     position: absolute;
-     left: -27em;
-     top: 23em;
-     text-align: center;
-     width: 10em;
-    }
- 
-    .contact-us {
-     top: 27em;
-     left: -27em;
-     text-align: center;
-     width: 10em;
-    }
+  .phone-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+  }
 
- 
-    .phone-logo {
-     display: inline;
-     position: absolute;
-     right: -16.3em;
-     top: -4px;
-    }
- 
-    .phone-logo a {
-     color: white;
-     text-decoration: none;
-     font-size: 30px;
-    }
- 
-    .wrapper-intro {
-        display: flex;
-        position: absolute;
-        right: 30%;
-        top: 1em;
-    }
-
+  .wrapper-intro {
+    display: flex;
+    position: absolute;
+    right: 30%;
+    top: 1em;
+  }
 }
 
+@media screen and (max-width: 425px) {
+  .action-buttons {
+    position: absolute;
+    top: 2em;
+    right: -3em;
+  }
 
+  .rent {
+    position: absolute;
+    left: -27em;
+    top: 23em;
+    text-align: center;
+    width: 10em;
+  }
 
-@media screen and (max-width:425px) {
-   
- 
-    .action-buttons{
-        position: absolute;
-        top: 2em;
-        right: -3em;
-    }
- 
-    .rent {
-     position: absolute;
-     left: -27em;
-     top: 23em;
-     text-align: center;
-     width: 10em;
-    }
- 
-    .contact-us {
-     top: 27em;
-     left: -27em;
-     text-align: center;
-     width: 10em;
-    }
- 
-    .phone-logo {
-     display: inline;
-     position: absolute;
-     right: -16.3em;
-     top: -4px;
-    }
- 
-    .phone-logo a {
-     color: white;
-     text-decoration: none;
-     font-size: 30px;
-    }
- 
-    .wrapper-intro {
-        display: flex;
-        position: absolute;
-        right: 20%;
-        top: 2em;
-    }
+  .contact-us {
+    top: 27em;
+    left: -27em;
+    text-align: center;
+    width: 10em;
+  }
+
+  .phone-logo {
+    display: inline;
+    position: absolute;
+    right: -16.3em;
+    top: -4px;
+  }
+
+  .phone-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+  .wrapper-intro {
+    display: flex;
+    position: absolute;
+    right: 20%;
+    top: 2em;
+  }
 }
 
+@media screen and (max-width: 375px) {
+  .action-buttons {
+    position: absolute;
+    top: 2em;
+    right: -4.5em;
+  }
 
-@media screen and (max-width:375px) {
-   
- 
-    .action-buttons{
-        position: absolute;
-        top: 2em;
-        right: -4.5em;
-    }
- 
-    .rent {
-     position: absolute;
-     left: -27em;
-     top: 23em;
-     text-align: center;
-     width: 10em;
-    }
- 
-    .contact-us {
-     top: 27em;
-     left: -27em;
-     text-align: center;
-     width: 10em;
-    }
- 
-    .phone-logo {
-     display: inline;
-     position: absolute;
-     right: -16.3em;
-     top: -4px;
-    }
- 
-    .phone-logo a {
-     color: white;
-     text-decoration: none;
-     font-size: 30px;
-    }
- 
-    .wrapper-intro {
-        display: flex;
-        position: absolute;
-        right: 20%;
-        top: 2em;
-    }
- }
+  .rent {
+    position: absolute;
+    left: -27em;
+    top: 23em;
+    text-align: center;
+    width: 10em;
+  }
 
+  .contact-us {
+    top: 27em;
+    left: -27em;
+    text-align: center;
+    width: 10em;
+  }
 
-@media screen and (max-width:320px) {
-   
- 
-    .action-buttons{
-        position: absolute;
-        top: 2em;
-        left: 29em;
-    }
- 
-    .rent {
-     position: absolute;
-     left: -27em;
-     top: 23em;
-     text-align: center;
-     width: 5em;
-    }
- 
-    .contact-us {
-     top: 27em;
-     left: -27em;
-     text-align: center;
-     width: 5em;
-    }
- 
-    .phone-logo {
-     display: inline;
-     position: absolute;
-     right: -16.3em;
-     top: -4px;
-    }
- 
-    .phone-logo a {
-     color: white;
-     text-decoration: none;
-     font-size: 30px;
-    }
- 
-    .wrapper-intro {
-        display: flex;
-        position: absolute;
-        right: 14%;
-        top: 2.5em;
-    }
- }
+  .phone-logo {
+    display: inline;
+    position: absolute;
+    right: -16.3em;
+    top: -4px;
+  }
 
+  .phone-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+  .wrapper-intro {
+    display: flex;
+    position: absolute;
+    right: 20%;
+    top: 2em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .action-buttons {
+    position: absolute;
+    top: 2em;
+    left: 29em;
+  }
+
+  .rent {
+    position: absolute;
+    left: -27em;
+    top: 23em;
+    text-align: center;
+    width: 5em;
+  }
+
+  .contact-us {
+    top: 27em;
+    left: -27em;
+    text-align: center;
+    width: 5em;
+  }
+
+  .phone-logo {
+    display: inline;
+    position: absolute;
+    right: -16.3em;
+    top: -4px;
+  }
+
+  .phone-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+  .wrapper-intro {
+    display: flex;
+    position: absolute;
+    right: 14%;
+    top: 2.5em;
+  }
+}
