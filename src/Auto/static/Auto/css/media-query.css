@@ -7,26 +7,15 @@
     .Logo {
         margin-left: 7em;
         display: none;
-    }
+    } 
 
     
 
     .action-buttons {
-         /* display: grid; */
-        /* position: fixed; */
         padding-top: 10em;
         margin: auto;
     }
 
-    .rent {
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-
-    .contact-us {
-        padding-left: 2em;
-        padding-right: 2em;
-    }
 
 
     .menu{
@@ -124,32 +113,186 @@
         display: block;
     }
 
+    .action-buttons{
+        position: absolute;
+        top: 2em;
+        /* right: -8em; */
+    }
+ 
+    .rent {
+     position: absolute;
+     left: -27em;
+     top: 23em;
+     text-align: center;
+     width: 10em;
+    }
+ 
+    .contact-us {
+     top: 27em;
+     left: -27em;
+     text-align: center;
+     width: 10em;
+    }
+
+ 
+    .phone-logo {
+     display: inline;
+     position: absolute;
+     right: -16.3em;
+     top: -4px;
+    }
+ 
+    .phone-logo a {
+     color: white;
+     text-decoration: none;
+     font-size: 30px;
+    }
+ 
+    .wrapper-intro {
+        display: flex;
+        position: absolute;
+        right: 30%;
+        top: 1em;
+    }
+
 }
+
+
+
+@media screen and (max-width:425px) {
+   
+ 
+    .action-buttons{
+        position: absolute;
+        top: 2em;
+        right: -3em;
+    }
+ 
+    .rent {
+     position: absolute;
+     left: -27em;
+     top: 23em;
+     text-align: center;
+     width: 10em;
+    }
+ 
+    .contact-us {
+     top: 27em;
+     left: -27em;
+     text-align: center;
+     width: 10em;
+    }
+ 
+    .phone-logo {
+     display: inline;
+     position: absolute;
+     right: -16.3em;
+     top: -4px;
+    }
+ 
+    .phone-logo a {
+     color: white;
+     text-decoration: none;
+     font-size: 30px;
+    }
+ 
+    .wrapper-intro {
+        display: flex;
+        position: absolute;
+        right: 20%;
+        top: 2em;
+    }
+}
+
+
+@media screen and (max-width:375px) {
+   
+ 
+    .action-buttons{
+        position: absolute;
+        top: 2em;
+        right: -4.5em;
+    }
+ 
+    .rent {
+     position: absolute;
+     left: -27em;
+     top: 23em;
+     text-align: center;
+     width: 10em;
+    }
+ 
+    .contact-us {
+     top: 27em;
+     left: -27em;
+     text-align: center;
+     width: 10em;
+    }
+ 
+    .phone-logo {
+     display: inline;
+     position: absolute;
+     right: -16.3em;
+     top: -4px;
+    }
+ 
+    .phone-logo a {
+     color: white;
+     text-decoration: none;
+     font-size: 30px;
+    }
+ 
+    .wrapper-intro {
+        display: flex;
+        position: absolute;
+        right: 20%;
+        top: 2em;
+    }
+ }
+
 
 @media screen and (max-width:320px) {
-   /* body {
-    background-color: red;
-   } */
-
-   .action-buttons{
-    position: absolute;
-    top: 2em;
-    right: -10em;
-   }
-
-   .rent {
-    position: absolute;
-    left: -27em;
-    top: 23em;
-    text-align: center;
-    width: 10em;
-   }
-
-   .contact-us {
-    top: 27em;
-    left: -27em;
-    text-align: center;
-    width: 10em;
-   }
-}
+   
+ 
+    .action-buttons{
+        position: absolute;
+        top: 2em;
+        left: 29em;
+    }
+ 
+    .rent {
+     position: absolute;
+     left: -27em;
+     top: 23em;
+     text-align: center;
+     width: 5em;
+    }
+ 
+    .contact-us {
+     top: 27em;
+     left: -27em;
+     text-align: center;
+     width: 5em;
+    }
+ 
+    .phone-logo {
+     display: inline;
+     position: absolute;
+     right: -16.3em;
+     top: -4px;
+    }
+ 
+    .phone-logo a {
+     color: white;
+     text-decoration: none;
+     font-size: 30px;
+    }
+ 
+    .wrapper-intro {
+        display: flex;
+        position: absolute;
+        right: 14%;
+        top: 2.5em;
+    }
+ }
 
