@@ -77,8 +77,10 @@ html {
 }
 
 .action-buttons {
-    color:white;
-    margin-top: 28%;
+    color: white;
+    position: absolute;
+    top: 90%;
+    right: 9%;
     
 }
 
@@ -89,7 +91,9 @@ html {
     padding-bottom: 10px;
     padding-top: 6px;
     border-radius: 1.7em;
-    margin-left: 30%;
+    position: absolute;
+    left: -50em;
+    /* margin-left: 30%; */
     background-color: #B9929F;
     opacity: 0.8;
     font-family: "Gotham Book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -102,7 +106,9 @@ html {
     padding-bottom: 10px;
     padding-top: 6px;
     border-radius: 1.7em;
-    margin-left: 5%;
+    position: absolute;
+    left: -22em;
+    /* margin-left: 5%; */
     background-color: #ffffff;
     opacity: .8;
     font-family: "Gotham Book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;

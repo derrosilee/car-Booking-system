@@ -93,10 +93,9 @@
     }
 
     nav{
-        width: 14rem;
+        width: 15rem;
         height:100%;
-        background-color:white;e;
-        opacity: .4;
+        background-color:white;
         position: fixed;
         transform: translateX(-50rem);
         z-index: 998;
@@ -125,5 +124,32 @@
         display: block;
     }
 
+}
+
+@media screen and (max-width:320px) {
+   /* body {
+    background-color: red;
+   } */
+
+   .action-buttons{
+    position: absolute;
+    top: 2em;
+    right: -10em;
+   }
+
+   .rent {
+    position: absolute;
+    left: -27em;
+    top: 23em;
+    text-align: center;
+    width: 10em;
+   }
+
+   .contact-us {
+    top: 27em;
+    left: -27em;
+    text-align: center;
+    width: 10em;
+   }
 }
 
