@@ -33,20 +33,20 @@ html {
 /* Background image and gradient for the second snap */
 .section:nth-child(2) {
   background-image: linear-gradient(
-      rgba(96, 88, 151, 0),
+      rgba(96, 88, 151, 0.7),
       rgba(104, 23, 197, 0.33)
     ),
-    url("../images/banner.jpg");
+    url("../images/2nd-snap.jpg");
 }
 /* end of second image bg snap */
 
 /* Background image and gradient for the third snap */
 .section:nth-child(3) {
   background-image: linear-gradient(
-      rgba(96, 88, 151, 0),
+      rgba(104, 23, 197, 0.7),
       rgba(104, 23, 197, 0.33)
     ),
-    url("../images/banner.jpg");
+    url("../images/3rd-snap.jpg");
 }
 /* end of third image bg snap */
 
